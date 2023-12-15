@@ -1,0 +1,30 @@
+<form [formGroup]="form">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Login</mat-card-title>
+    </mat-card-header>
+    <div class="error">
+      <mat-error *ngIf="error">Wrong username or password</mat-error>
+    </div>
+    <mat-card-content>
+
+      <div>
+        <mat-form-field appearance="outline">
+          <mat-label>Username</mat-label>
+          <input matInput placeholder="Placeholder" formControlName="username">
+        </mat-form-field>
+      </div>
+
+      <div>
+        <mat-form-field appearance="outline">
+          <mat-label>Password</mat-label>
+          <input matInput placeholder="Placeholder" formControlName="password">
+        </mat-form-field>
+      </div>
+
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="primary" (click)="login()">Login</button>
+    </mat-card-actions>
+  </mat-card>
+</form>

@@ -14,6 +14,8 @@ import { CarsPageComponent } from './pages/cars-page/cars-page.component';
 import { CarFormComponent } from './components/car-form/car-form.component';
 import { CarsComponent } from './components/cars/cars.component';
 import { CarComponent } from './components/car/car.component';
+import {MatExpansionModule} from "@angular/material/expansion";
+import {MatPaginatorModule} from "@angular/material/paginator";
 
 
 @NgModule({
@@ -33,7 +35,9 @@ import { CarComponent } from './components/car/car.component';
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatExpansionModule,
+    MatPaginatorModule
   ]
 })
 export class AuthModule { }

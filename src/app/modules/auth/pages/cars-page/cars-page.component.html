@@ -1,2 +1,10 @@
 <app-car-form></app-car-form>
-<app-cars></app-cars>
+<app-cars [cars]="cars"></app-cars>
+<mat-paginator [length]="length"
+               [pageSize]="pageSize"
+               [pageIndex]="pageIndex"
+               [showFirstLastButtons]="true"
+               (page)="handlePageEvent($event)"
+               [hidePageSize]="true"
+               aria-label="Select page">
+</mat-paginator>

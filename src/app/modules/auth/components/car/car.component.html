@@ -1,6 +1,11 @@
-<div>
-  <div>id: {{ car.id }}</div>
-  <div>brand: {{ car.brand }}</div>
-  <div>price: {{ car.price }}</div>
-  <div>year: {{ car.year }}</div>
-</div><p>car works!</p>
+<div class="container">
+  <div>
+    <div>id:{{ car.id }}</div>
+    <div>price:{{ car.price }}</div>
+    <div>year:{{ car.year }}</div>
+  </div>
+  <div class="buttons">
+    <button mat-raised-button color="primary" (click)="update()">Update</button>
+    <button mat-raised-button color="primary" (click)="delete()">Delete</button>
+  </div>
+</div>

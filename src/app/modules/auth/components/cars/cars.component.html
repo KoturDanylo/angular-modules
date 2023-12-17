@@ -1,1 +1,10 @@
-<app-car *ngFor="let car of cars" [car]="car"></app-car>
+<mat-accordion>
+  <mat-expansion-panel *ngFor="let car of cars">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        {{ car.brand }}
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <app-car [car]="car"></app-car>
+  </mat-expansion-panel>
+</mat-accordion>

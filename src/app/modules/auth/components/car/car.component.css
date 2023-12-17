@@ -1,0 +1,9 @@
+.container{
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+}
+
+.buttons button {
+  margin: 0 5px;
+}
